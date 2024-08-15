@@ -1,0 +1,110 @@
+:root {
+	/* Number after the color represents opacity */
+	--orange-100:#f68c1e;
+	--orange-75: #f9a654;
+	--orange-50: #fcc186;
+	--orange-25: #fddebe;
+	--blue-100:#001245;
+	--blue-75:#243b68;
+	--blue-50:#5b6a91;
+	--blue-25:#9da6c2;
+	--silver-100:#b6b9be;
+	--silver-75:#c5c8cc;
+	--silver-50:#d7d8db;
+	--silver-25:#eaeaec;
+	/* Text variables */
+	--paragraph-color:#4d4f53e6;
+	/* Other variables */
+	--shadow:0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+h1, h2, h3, h4 {
+	color: var(--blue-75);
+}
+p {
+	color: var(--paragraph-color);
+}
+/* Body Sections */
+.section-main, .section-main-grey {
+	height:450px;
+	width: auto;
+	max-width:100%;
+	background-color: white;
+	padding:30px 40px;
+}
+.section-main h1, .section-main-grey h1 {
+	font-size: 2em;
+	color: var(--blue-75);
+	text-align: center;
+	margin: 5px 0 20px 0;
+}
+.section-main-grey {
+	background-color: var(--silver-25);
+}
+/* Cards */
+.card-main {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border: 1px solid var(--silver-50);
+	border-radius: 10px;
+	box-shadow: var(--shadow);
+	padding: 20px;
+	height:250px;
+	width:600px;
+}
+.card-main h1,
+.card-main h2,
+.card-main h3{
+	text-align: center;
+	margin: 5px 0 5px 0;
+}
+.card-main h3 {
+	color: var(--orange-100);
+    letter-spacing: 1px;
+}
+.card-main p {
+	text-align: center;
+	margin: 5px 0 5px 0;
+	font-size:1em;
+}
+/* Buttons */
+.btn-main, .btn-main-orange {
+	cursor: pointer;
+	margin: 15px auto 15px auto;
+	padding: 10px;
+	border:none;
+	border-radius: 5px;
+	transition: .15s ease-in-out;
+	font-size:20px;
+	letter-spacing: 1px;
+	color: white;
+	background-color: var(--blue-75);
+	width: 300px;
+	height: 50px;
+}
+.btn-main:hover {
+	background-color: var(--blue-100) !important;
+}
+.btn-main:active {
+	transform: translateY(1px)
+}
+.btn-main-orange {
+	background-color: var(--orange-75);
+}
+.btn-main-orange:hover {
+	background-color: var(--orange-100) !important;
+}

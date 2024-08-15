@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .thread {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .thread-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .user-info {
+            font-weight: bold;
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 0.8em;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .reply {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .comment-box {
+            margin-top: 20px;
+        }
+
+        .comment-box textarea {
+            width: calc(100% - 80px);
+            padding: 10px;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .comment-box button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="thread">
+        <div class="thread-header">
+            <img class="profile-pic" src="profile_pic.jpg" alt="User Profile Pic">
+            <div class="user-info">John Doe</div>
+            <div class="timestamp">Posted on January 1, 2024 at 12:00 PM</div>
+        </div>
+        <div class="message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget lacus id eros volutpat congue. Nulla facilisi. Integer et ultrices justo. Curabitur aliquet leo vitae diam efficitur, vel pulvinar urna ultricies. Quisque varius ligula a libero pulvinar dictum. Vestibulum sagittis id libero non fermentum.
+        </div>
+    </div>
+
+    <div class="replies">
+        <div class="reply">
+            <div class="thread-header">
+                <img class="profile-pic" src="profile_pic_2.jpg" alt="User Profile Pic">
+                <div class="user-info">Jane Smith</div>
+                <div class="timestamp">Posted on January 2, 2024 at 10:00 AM</div>
+            </div>
+            <div class="message">
+                Sed vitae enim eget felis fermentum efficitur. Vestibulum et felis nec ligula blandit aliquet. Sed malesuada mattis tortor, vitae ultrices ipsum ullamcorper eget. Nulla facilisi.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="comment-box">
+        <textarea rows="4" placeholder="Write your comment here..."></textarea>
+        <button>Comment</button>
+        <button>Cancel</button>
+    </div>
+</body>
+</html>
