@@ -21,3 +21,6 @@ Our tool is available to access now via the web starting on <month name> <day>, 
 ## About our team: 
 
 Found in Spring 2024 at The University of Texas at El Paso, the team was formed by their interest in Agile development methodologies with a mixture of SCRUM, Kanban, and XP. 
+
+## Individual Contribution: 
+Majority of Pull Request (Approximately 90 PR) Community Thread Pages, and Manager Pages)
